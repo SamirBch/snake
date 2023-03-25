@@ -1,4 +1,4 @@
-import pygame, pygame_gui
+import pygame, pygame_gui   
 from math import floor
 import random
 from pygame_gui.elements import UIButton, UITextEntryLine, UILabel, UITextBox, UISelectionList
@@ -260,7 +260,7 @@ class App:
         pygame.init()
         self.__screen = pygame.display.set_mode((800, 600))
         self.__manager = pygame_gui.UIManager((800, 600))
-        image = pygame.image.load("image1.png")
+        image = pygame.image.load("image.png")
         image = pygame.transform.scale(image, (800, 600))
         self.__screen.blit(image, (0, 0))
         
